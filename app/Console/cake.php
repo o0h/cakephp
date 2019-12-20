@@ -17,6 +17,8 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
+date_default_timezone_set('UTC');
+
 if (!defined('DS')) {
 	define('DS', DIRECTORY_SEPARATOR);
 }
