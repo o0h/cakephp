@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  app:
+    volumes:
+      - .:/app
+    ports:
+      - "8080:80"
+    container_name: cake2-app
+    depends_on:
+      - database
+    build:
+      context: .
+      dockerfile: Dockerfile.cake2
+    environment:
+      - PHP_IDE_CONFIG=serverName=cake2-app
+      - DB_HOST=cake2-app-db
+  database:
+    image: mysql:5
+    container_name: cake2-app-db
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_USER: my_app
+      MYSQL_PASSWORD: secret
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
