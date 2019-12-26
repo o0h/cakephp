@@ -17,7 +17,6 @@
  */
 
 App::uses('DigestAuthenticate', 'Controller/Component/Auth');
-App::uses('AppModel', 'Model');
 App::uses('CakeRequest', 'Network');
 App::uses('CakeResponse', 'Network');
 

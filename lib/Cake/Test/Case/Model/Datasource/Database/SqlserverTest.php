@@ -17,7 +17,6 @@
  */
 
 App::uses('Model', 'Model');
-App::uses('AppModel', 'Model');
 App::uses('Sqlserver', 'Model/Datasource/Database');
 
 require_once dirname(dirname(dirname(__FILE__))) . DS . 'models.php';

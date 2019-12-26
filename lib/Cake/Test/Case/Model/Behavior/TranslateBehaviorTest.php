@@ -14,7 +14,6 @@
  */
 
 App::uses('Model', 'Model');
-App::uses('AppModel', 'Model');
 
 require_once dirname(dirname(__FILE__)) . DS . 'models.php';
 

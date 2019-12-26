@@ -17,7 +17,6 @@
  */
 
 App::uses('Model', 'Model');
-App::uses('AppModel', 'Model');
 App::uses('Mysql', 'Model/Datasource/Database');
 App::uses('CakeSchema', 'Model');
 
